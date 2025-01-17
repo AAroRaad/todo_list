@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, AppDispatch } from '@/app/store';
+import { RootState, AppDispatch } from '@/features/store';
 import {deleteTask, fetchTasks, showTask, updateTaskCompletion} from '@/features/tasks/taskSlice';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

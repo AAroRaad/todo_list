@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { AppDispatch } from '@/app/store';
+import { AppDispatch } from '@/features/store';
 import { createTask } from '@/features/tasks/taskSlice';
 import {
     Box,

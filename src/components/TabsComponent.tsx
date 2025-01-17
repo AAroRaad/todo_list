@@ -8,7 +8,7 @@ import TaskList from './TaskList';
 import {TabPanelProps} from "@/types/task";
 import {clearSelectedTask} from "@/features/tasks/taskSlice";
 import {useDispatch} from "react-redux";
-import {AppDispatch} from "@/app/store";
+import {AppDispatch} from "@/features/store";
 
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;

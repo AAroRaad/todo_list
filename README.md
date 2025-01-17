@@ -61,28 +61,29 @@ This is a mobile-adaptive ToDo web app built with **Next.js (App Router)**, **Re
 todo_list/
 ├── public/   
 ├── src/   
-│   ├── app/                   # Next.js app directory
-│   │   ├── favicon.ico              # API route handlers
+│   ├── app/               
+│   │   ├── favicon.ico          
 │   │   ├── globals.css
 │   │   ├── layout.tsx
 │   │   ├── page.tsx
-│   │   ├── store.ts
 │   │   ├── theme.ts
 │   │   └── ThemeRegistry.tsx 
+│   │   
 │   │
 │   ├── components/       
 │   │   ├── AllTasks.tsx    
-│   │   ├── CreateTaskModal.tsx  
-│   │   ├── Providers.tsx 
+│   │   ├── CreateTaskModal.tsx    
 │   │   ├── TabsComponent.tsx   
 │   │   ├── TaskCard.tsx 
 │   │   ├── TaskDetailsModal.tsx
 │   │   └── TaskList.tsx 
 │   │
 │   ├── features/          
-│   │   └── tasks/        
-│   │       └── taskSlice.ts       
-│   │    
+│   │   ├── tasks/        
+│   │   │   └── taskSlice.ts       
+│   │   ├── Providers.tsx
+│   │   └── store.ts
+│   │
 │   ├── types/  
 │   │   └── task.ts  
 │   │

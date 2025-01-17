@@ -11,7 +11,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import DeleteIcon from '@mui/icons-material/Delete';
 import {useSelector} from "react-redux";
-import {RootState} from "@/app/store";
+import {RootState} from "@/features/store";
 import TaskDetailsModal from "@/components/TaskDetailsModal";
 import {isToday, isTomorrow} from "@/utils/helper";
 
