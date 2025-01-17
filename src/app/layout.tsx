@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from 'next/font/google';
-import {Providers} from "@/features/Providers";
+import { Poppins } from "next/font/google";
+import { Providers } from "@/features/Providers";
 import React from "react";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import ThemeRegistry from "@/app/ThemeRegistry";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -26,14 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <Providers>
-    <html lang="en">
-      <body
-          className={poppins.className}
-      >
-      <ThemeRegistry>{children}</ThemeRegistry>
-      <ToastContainer/>
-      </body>
-    </html>
+      <html lang="en">
+        <body className={poppins.className}>
+          <ThemeRegistry>{children}</ThemeRegistry>
+          <ToastContainer />
+        </body>
+      </html>
     </Providers>
   );
 }
